@@ -11,12 +11,16 @@ var maxProfit = function(prices) {
     while (rightP < prices.length){
         if(prices[leftP] < prices[rightP]){
             var profit = prices[rightP] - prices[leftP];
-            maxProfit = Math.max(profit, maxProfit)
+            maxProfit = Math.max(profit, maxProfit);
         }
         else {
             leftP = rightP;
         }
         rightP++;
+    }
+    if(maxProfit == 0){
+        console.log("No profitable purchases can be made");
+        return 0;
     }
     return maxProfit;
 };
