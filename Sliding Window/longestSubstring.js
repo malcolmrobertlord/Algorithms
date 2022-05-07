@@ -29,8 +29,7 @@ console.log(lengthOfLongestSubstring("abcabcbb"))
 
 ///METHOD 2
 
-var lengthOfLongestSubstring = function(s){
-    var lengthOfLongestSubstring = function(s) {
+var lengthOfLongestSubstring2 = function(s){
         let left = 0;
         let set = new Set();
         let maxLength = 0;
@@ -46,5 +45,4 @@ var lengthOfLongestSubstring = function(s){
         }
         return maxLength;
     }
-};
 
