@@ -12,11 +12,11 @@ var maxArea = function(height) {
     let lPointer = 0;
     let rPointer = height.length - 1;
     while (rPointer > lPointer){
-        console.log(`the right pointer is at ${rPointer}`)
-        console.log(`the left pointer is at ${lPointer}`)
-        console.log(`the max water is currently ${maxWater}`)
+        // console.log(`the right pointer is at ${rPointer}`)
+        // console.log(`the left pointer is at ${lPointer}`)
+        // console.log(`the max water is currently ${maxWater}`)
         currentWater = (rPointer - lPointer)*(Math.min(height[lPointer], height[rPointer]));
-        console.log(`the current water is ${currentWater}`)
+        // console.log(`the current water is ${currentWater}`)
         maxWater = Math.max(maxWater, currentWater);
         if(height[lPointer] > height[rPointer]){
             rPointer--
