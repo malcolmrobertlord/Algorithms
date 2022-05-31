@@ -1,9 +1,6 @@
 // Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 
 
-
-
-
 function diagonalDifference(arr) {
     let d1 = 0;
     let d2 = 0;
